@@ -1,6 +1,6 @@
 const textController = {
   textInfo: async (ctx, next) => {
-    ctx.body = 'Hello Koa!'
+    ctx.body = {code:200}
   } 
 }
 module.exports = textController;
