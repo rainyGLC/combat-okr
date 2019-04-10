@@ -1,3 +1,23 @@
 <view class="okr-container">
-  okr页面
+  <buttom class="addOkr">添加okr</buttom>
+  <view class="okrList">
+    <view class="okrItem">
+      <view class="okrItem-title">我想让网页打开速度快一点</view>
+      <view class="create-time">创建时间:2019/03/31 20:31:25</view>
+    </view>
+  </view>
+
+  <view class="shade-contanter">
+    <view class="shade-popup">
+      <view class="shade-box">
+        <view class="shade-list">
+          <view class="shade-item">查看</view>
+          <view class="shade-item">编辑</view>
+          <view class="shade-item">已完成</view>
+          <view class="shade-item">删除</view>
+          <view class="shade-item">取消</view>
+        </view>
+      </view>
+    </view>
+  </view>
 </view>

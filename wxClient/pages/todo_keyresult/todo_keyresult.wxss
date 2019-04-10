@@ -1,0 +1,33 @@
+.todoOKR-container {
+  display: flex;
+  flex-direction:column;
+}
+.keyresult-container{
+  padding:10px;
+  background-color: #fff;
+}
+.keyresult-docs{
+  font-size: 12px;
+  color: #999;
+  margin-bottom:20px;
+}
+.objective-title{
+  font-size: 16px;
+  color:#333;
+  margin-bottom:5px;
+}
+.keyresult-list{
+  margin-top:10px;
+}
+.keyresult-item{
+  line-height: 30px;
+  font-size: 16px;
+  padding: 5px;
+  color: #333;
+  border:1px solid #333;
+  margin-bottom: 20px;
+}
+.keyresult-item.active{
+  background-color: #333;
+  color:#fff;
+}

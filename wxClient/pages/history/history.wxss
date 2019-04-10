@@ -1,0 +1,29 @@
+.history-container{
+  display: flex;
+  flex-direction:column;
+}
+.history-content{
+  padding:10px;
+  background-color: #fff;
+}
+.todo-title{
+  font-size: 18px;
+  color: #999;
+  line-height: 30px;
+}
+.todo-list{
+  margin-top:30px;
+  padding:10px;
+  background-color: #f5f5f5;
+}
+.todo-list .add-title{
+  font-size: 18px;
+  line-height: 25px;
+  color:#333;
+}
+.create_time{
+  margin-top:10px;
+  color:#999;
+  font-size: 16px;
+  padding-bottom:10px;
+}

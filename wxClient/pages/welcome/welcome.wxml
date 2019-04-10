@@ -1,3 +1,22 @@
-<view class="welcome-container">
-  欢迎页面
+<view class="page-container">
+  <view class="lunar-container">
+    <view class="lunar-welcome">
+      <view class="lunar-logo">
+        <image class="lunar-logo-image" src="/images/greet-logo.png"></image>
+      </view>
+      <view class="lunar-title">目标和关键成果</view>
+      <view class="lunar-content">
+        <view class="lunar-desc-chinese">
+          OKR(Objectives and Key Results)全称为“目标和关键成果”
+        </view>
+        <view class="lunar-desc-english">
+          制定OKR的基本方法是：首先，要设定一个“目标”（Objective），这个目标不必是确切的、可衡量的，例如“我想让我的网站更好”；然后，设定若干可以量化的“关键结果”（Key Results），用来帮助自己实现目标，例如“让网站速度加快30%”或者“融入度提升15%”之类的具体目标。
+        </view>
+        <view class="lunar-suffix">—— 一个简单有效的系统</view>
+      </view>
+      <navigator class="lunar-button" url="pages/todo/todo">
+        <button class="lunar-button-container">立即体验</button>
+      </navigator>   
+    </view>
+  </view>
 </view>

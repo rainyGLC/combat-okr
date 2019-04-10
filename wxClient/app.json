@@ -1,21 +1,37 @@
 {
   "pages":[
+    "pages/okr_detail/okr_detail",
+    "pages/okr_edit/okr_edit",
+    "pages/okr/okr",
+    "pages/history/history",
+    "pages/todo_keyresult/todo_keyresult",
+    "pages/todo/todo",
     "pages/welcome/welcome",
     "pages/index/index",
     "pages/logs/logs",
-    
-    "pages/todo/todo",
-    "pages/todo_keyresult/todo_keyresult",
-    "pages/okr/okr",
-    "pages/okr_edit/okr_edit",
-    "pages/okr_create/okr_create",
-    "pages/okr_detail/okr_detail",
-    "pages/history/history"
+    "pages/okr_create/okr_create" 
   ],
   "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTitleText": "okr"
+  },
+  "tabBar": {
+    "color":"#2c2c2c",
+    "selectedColor":"#d81e06",
+    "list": [{
+      "pagePath": "pages/todo/todo",
+      "text": "Todo",
+      "iconPath": "/images/todo.png",
+      "selectedIconPath":"/images/todo_active.png"
+    }, {
+      "pagePath": "pages/history/history",
+      "text": "Done",
+      "iconPath": "/images/history.png",
+      "selectedIconPath":"/images/history_active.png"
+    },{
+      "pagePath": "pages/okr/okr",
+      "text": "Okr",
+      "iconPath": "/images/okr.png",
+      "selectedIconPath":"/images/okr_active.png"
+    }]
   }
 }

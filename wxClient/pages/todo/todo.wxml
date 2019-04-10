@@ -1,3 +1,35 @@
 <view class="todo-container">
-  todo页面
+  <view class="todo-container">
+    <view class="todo-content">
+      <text class="todo-tilte">你必须做你不得不做的事</text>
+      <input class="entry-input"  type="text" placeholder="写下一个能点燃我的状态" /> 
+    </view>
+    <view class="todo-list">
+      <view class="todo-item">替换提及较大的资源库</view>
+      <view class="todo-time">创建时间：2019/03／31 20:29:27</view>
+    </view>
+     <view class="todo-list">
+      <view class="todo-item">替换提及较大的资源库</view>
+      <view class="todo-time">创建时间：2019/03／31 20:29:27</view>
+    </view>
+     <view class="todo-list">
+      <view class="todo-item">替换提及较大的资源库</view>
+      <view class="todo-time">创建时间：2019/03／31 20:29:27</view>
+    </view>
+     <view class="todo-list">
+      <view class="todo-item">替换提及较大的资源库</view>
+      <view class="todo-time">创建时间：2019/03／31 20:29:27</view>
+    </view>
+  </view>
+  <view class="shade-contanter">
+    <view class="shade-popup">
+      <view class="shade-box">
+        <view class="shade-list">
+          <view class="shade-item">关联</view>
+          <view class="shade-item">完成</view>
+          <view class="shade-item">删除</view>
+        </view>
+      </view>
+    </view>
+  </view>
 </view>

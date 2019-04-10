@@ -1,3 +1,24 @@
 <view class="okrEdit-container">
-  okrEdit页面
+  <view class="okrEdit-content">
+    <text class="objective-dosc">Objective目标：</text>
+
+    <view class="objective-container">
+      <view class="objective-title">我想让网站打开快一点</view>
+      <view class="objective-edit">+</view>
+    </view>
+    <view class="keyresult-list">
+      <text class="objective-dosc">Keyresult成果1：</text>
+      <view class="keyresult-item">
+        <view class="objective-title">感知上快一点</view>
+        <view class="objective-edit">-</view>
+      </view>
+    </view>
+    <view class="keyresult-list">
+      <text class="objective-dosc">Keyresult成果2：</text>
+      <view class="keyresult-item">
+        <view class="objective-title">感知上快一点</view>
+        <view class="objective-edit">-</view>
+      </view>
+    </view>
+  </view>
 </view>

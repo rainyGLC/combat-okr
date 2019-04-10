@@ -1,3 +1,34 @@
 <view class='okrDetail-container'>
-  okr_detail页面
+  <view class="okrshow">
+
+    <view class="objective-list">
+      <view class="objective-tilte">我想让网页打开速度快一点</view>
+      <view class="create-time">创建时间</view>
+    </view>
+
+    <view class="keyresult-list">
+      <view class="keyresult-item">
+        <view class="keyresult-content">
+          <view class="keyresult-title">感知上也很快</view>
+          <view class="keyresult-completed">已完成</view>
+        </view>
+          <view class="todo-list">
+            <view class="todo-item">添加Loading</view>
+          </view>
+      </view>
+
+      <view class="keyresult-item">
+        <view class="keyresult-content">
+          <view class="keyresult-title">感知上也很快</view>
+          <view class="keyresult-completed">点击标记</view>
+        </view>
+        <view class="todo-list">
+          <view class="todo-item">图片资源压缩和代理</view>
+          <view class="todo-item">替换提及较大的资源库</view>
+          <view class="todo-item">javascreipt代码压缩</view>
+        </view>
+      </view>
+      </view>
+    </view>
+
 </view>

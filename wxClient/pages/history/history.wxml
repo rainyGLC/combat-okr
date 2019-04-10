@@ -1,3 +1,12 @@
 <view class="history-container">
-  历史页面
+  <view class="history-content">
+    <text class="todo-title">已完成的Todos</text>
+    <view class="todo-list">
+      <view class="todo-item">
+        <text class="add-title">添加Loading</text>
+        <view class="create_time">创建时间：2019/03/03 20:31:34</view>
+        <view class="create_time">完成时间：2019/03/03 20:31:34</view>
+      </view>
+    </view>
+  </view>
 </view>

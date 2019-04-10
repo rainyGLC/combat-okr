@@ -1,0 +1,69 @@
+/**index.wxss**/
+.lunar-container{
+  min-height: 100%;
+}
+.lunar-welcome .lunar-logo{
+  height: 370rpx;
+  margin-bottom: 30rpx;
+}
+.lunar-logo-image{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.lunar-title{
+  display: block;
+  text-align: left;
+  font-size: 48rpx;
+  padding-left:62rpx;
+  line-height: 52rpx;
+  color: #333;
+  font-weight: 500;
+  margin-bottom: 84rpx;
+}
+.lunar-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding:0 60rpx;
+  text-align: left;
+}
+.lunar-content:before{
+  content: '';
+  display:inline-block;
+  width: 50rpx;
+  height: 2rpx;
+  background-color: #333;
+  position:absolute;
+  left:62rpx;
+  top:-26rpx;
+}
+.lunar-desc-chinese{
+  font-size: 14px;
+  color: #333;
+  line-height: 1.8;
+}
+.lunar-desc-english{
+  margin-top:24rpx;
+  color: #333;
+  font-size: 14px;
+}
+.lunar-suffix{
+  margin-top: 24rpx;
+  font-size: 12px;
+  align-items: flex-end;
+  text-align: right;
+  color:#666666;
+}
+.lunar-button-container{
+  display: flex;
+  margin-top:65rpx;
+  justify-content: center;
+  width: 645rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #333;
+}

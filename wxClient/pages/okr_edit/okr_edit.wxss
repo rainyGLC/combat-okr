@@ -1,0 +1,37 @@
+.okrEdit-container{
+  display: flex;
+  flex-direction:column;
+}
+.okrEdit-content{
+  padding:10px;
+}
+.objective-dosc{
+  line-height: 25px;
+  font-size:16px;
+  color: #333;
+}
+.objective-container, .keyresult-item{
+  display: flex;
+  flex:1;
+}
+.objective-title{
+  width:200px;
+  margin-right:25px;
+  padding:0 10px;
+  height: 45px;
+  line-height: 45px;
+  border:1px solid #333;
+}
+.keyresult-list{
+  margin-top:20px;
+}
+.objective-edit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  font-weight: 400;
+  background-color: #999999;
+  color:#fff;
+}

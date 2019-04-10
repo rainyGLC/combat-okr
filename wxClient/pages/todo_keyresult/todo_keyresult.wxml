@@ -1,3 +1,13 @@
 <view class="todoOKR-container">
-  todo_keyresult页面
+  <view class="keyresult-container">
+    <text class="keyresult-docs">请选择关键成果KR(KeyResult)进行绑定</text>
+      <view class="keyresult-list">
+        <view class="objective-title">目标：我想让网站打开速度快一点</view>
+        <view class="keyresult-list">
+          <view class="keyresult-item">打开速度快30%</view>
+          <view class="keyresult-item">感知上也很快</view>
+          <view class="keyresult-item">打开速度快30%</view>
+        </view>
+      </view>
+  </view>
 </view>
