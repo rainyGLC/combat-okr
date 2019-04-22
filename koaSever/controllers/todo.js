@@ -52,10 +52,10 @@ const todoController = {
     // console.log(params);
     let status = ctx.request.body.status;//前台传递过来的参数{status:1}
     // console.log(status,'koko');
-    if(status){
+    if(status==1){
       params.finished_time=new Date();
     }else{
-      return null
+      params.finished_time=null
     }
     // console.log(params);
     const todos = await Todo.update(id,params);

@@ -2,26 +2,16 @@
   <view class="todo-container">
     <view class="todo-content">
       <text class="todo-tilte">你必须做你不得不做的事</text>
-      <input class="entry-input"  type="text" placeholder="写下一个能点燃我的状态" /> 
+      <input class="entry-input"  type="text" placeholder="请输入你需要完成的事情"
+        value="{{value}}" bindinput ="valueInput" bindconfirm="valueInsert"/>
     </view>
-    <view class="todo-list">
-      <view class="todo-item">替换提及较大的资源库</view>
-      <view class="todo-time">创建时间：2019/03／31 20:29:27</view>
-    </view>
-     <view class="todo-list">
-      <view class="todo-item">替换提及较大的资源库</view>
-      <view class="todo-time">创建时间：2019/03／31 20:29:27</view>
-    </view>
-     <view class="todo-list">
-      <view class="todo-item">替换提及较大的资源库</view>
-      <view class="todo-time">创建时间：2019/03／31 20:29:27</view>
-    </view>
-     <view class="todo-list">
-      <view class="todo-item">替换提及较大的资源库</view>
-      <view class="todo-time">创建时间：2019/03／31 20:29:27</view>
+    <view class="todo-list" wx:for="{{todos}}" wx:key="{{item.id}}" data-id="{{item.id}}" data-index="{{index}}" bindtap="shadePopup">
+      <view class="todo-item">{{item.title}}</view>
+      <view class="todo-time">创建时间：{{item.create_time}}</view>
     </view>
   </view>
-  <view class="shade-contanter">
+
+  <!-- <view class="shade-contanter" hidden>
     <view class="shade-popup">
       <view class="shade-box">
         <view class="shade-list">
@@ -31,5 +21,5 @@
         </view>
       </view>
     </view>
-  </view>
+  </view> -->
 </view>

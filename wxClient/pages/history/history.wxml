@@ -2,10 +2,10 @@
   <view class="history-content">
     <text class="todo-title">已完成的Todos</text>
     <view class="todo-list">
-      <view class="todo-item">
-        <text class="add-title">添加Loading</text>
-        <view class="create_time">创建时间：2019/03/03 20:31:34</view>
-        <view class="create_time">完成时间：2019/03/03 20:31:34</view>
+      <view class="todo-item {{item.status==1 ? 'active' : ''}}" bindtap="shadePopup" wx:for="{{todos}}" wx:key="{{item.id}}" data-id="{{item.id}}" data-index="{{index}}">
+        <text class="add-title">{{item.title}}</text>
+        <view class="create_time">创建时间：{{item.create_time}}</view>
+        <view class="create_time">完成时间：{{item.finished_time}}</view>
       </view>
     </view>
   </view>

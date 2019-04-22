@@ -1,3 +1,3 @@
 Page({
-  
+  "navigationBarTitleText": "okr-create"
 })

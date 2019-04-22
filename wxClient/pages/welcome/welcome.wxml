@@ -14,9 +14,9 @@
         </view>
         <view class="lunar-suffix">—— 一个简单有效的系统</view>
       </view>
-      <navigator class="lunar-button" url="pages/todo/todo">
+      <view class="lunar-button" bindtap="startLogin">
         <button class="lunar-button-container">立即体验</button>
-      </navigator>   
+      </view>   
     </view>
   </view>
 </view>

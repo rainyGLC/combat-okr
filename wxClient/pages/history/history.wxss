@@ -14,12 +14,32 @@
 .todo-list{
   margin-top:30px;
   padding:10px;
-  background-color: #f5f5f5;
 }
 .todo-list .add-title{
   font-size: 18px;
   line-height: 25px;
   color:#333;
+}
+.todo-list  .todo-item{
+  position: relative;
+  background-color: #f5f5f5;
+  margin-bottom: 20rpx;
+}
+.todo-item.active:after{
+  content: '完成';
+  width: 60px;
+  height: 30px;
+  position: absolute;
+  top:5px;
+  right: -15px;
+  border-radius: 4px;
+  border: 2px solid red;
+  text-align: center;
+  line-height: 30px;
+  font-size: 16px;
+  color: #999;
+  opacity: 0.4;
+  transform: rotate(45deg);
 }
 .create_time{
   margin-top:10px;
