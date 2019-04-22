@@ -20,11 +20,10 @@ module.exports = async function (ctx, next) {
       data: ctx.state.data !== undefined ? ctx.state.data : {}
     }
   } catch (e) {
-    // catch 住全局的错误信息
+    // catch抓住全局的错误信息
     debug('Catch Error: %o', e)
     // 设置状态码为 200 - 服务端错误
     ctx.status = 200
-
     // 输出详细的错误信息
     ctx.body = {
       code: -1,
