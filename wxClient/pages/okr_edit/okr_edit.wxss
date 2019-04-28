@@ -1,9 +1,13 @@
 .okrEdit-container{
   display: flex;
   flex-direction:column;
+  justify-content: space-between;
+  align-items: center;
+  padding:0 10px;
+  min-height: 100vh;
 }
 .okrEdit-content{
-  padding:10px;
+  padding-top:20px;
 }
 .objective-dosc{
   line-height: 25px;
@@ -34,4 +38,10 @@
   font-weight: 400;
   background-color: #999999;
   color:#fff;
+}
+.newAdd{
+  width: 100%;
+}
+.buttonAdd{
+  background-color: #999999;
 }

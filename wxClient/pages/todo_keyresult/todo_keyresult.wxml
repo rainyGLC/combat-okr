@@ -1,12 +1,17 @@
 <view class="todoOKR-container">
   <view class="keyresult-container">
     <text class="keyresult-docs">请选择关键成果KR(KeyResult)进行绑定</text>
-      <view class="keyresult-list">
-        <view class="objective-title">目标：我想让网站打开速度快一点</view>
+      <view class="objective-list" wx:for="{{okr}}" wx:key="{{item.id}}">
+        <view class="objective-title">目标:{{item.title}}</view>
+
         <view class="keyresult-list">
-          <view class="keyresult-item">打开速度快30%</view>
-          <view class="keyresult-item">感知上也很快</view>
-          <view class="keyresult-item">打开速度快30%</view>
+          <view class="keyresult-item {{data.active ? 'active' : ''}}" wx:for="{{item.keyresults}}" 
+            wx:key="{{data.id}}" wx:for-item="data" wx:for-index="keyresult_index" 
+            data-active="{{data.active}}" data-keyresult_id="{{data.id}}" 
+            data-keyresult_index="{{keyresult_index}}" data-objective_index="{{index}}"
+            bindtap="keyresultHighlight" data-title="{{data.title}}">{{data.title}}</view>
+         <!--  <view class="keyresult-item">感知上也很快</view>
+          <view class="keyresult-item">打开速度快30%</view> -->
         </view>
       </view>
   </view>

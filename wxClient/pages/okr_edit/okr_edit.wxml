@@ -3,22 +3,26 @@
     <text class="objective-dosc">Objective目标：</text>
 
     <view class="objective-container">
-      <view class="objective-title">我想让网站打开快一点</view>
-      <view class="objective-edit">+</view>
+      <input class="objective-title" placeholder="请输入你的目标" value="{{objectiveTitle}}" bindinput="updateObjective" />
+      <view class="objective-edit" bindtap="addKeyresult">+</view>
     </view>
-    <view class="keyresult-list">
-      <text class="objective-dosc">Keyresult成果1：</text>
+    <view class="keyresult-list" wx:for="{{keyresults}}" wx:key="item.id">
+      <text class="objective-dosc">Keyresult成果{{index+1}}：</text>
       <view class="keyresult-item">
-        <view class="objective-title">感知上快一点</view>
-        <view class="objective-edit">-</view>
+        <input class="objective-title" placeholder="请输入你的成就" value="{{item.title}}" data-index="{{index}}" bindinput="updateKeyresult" />
+        <view class="objective-edit" data-index="{{index}}" data-id="{{item.id}}" bindtap="deleteKeyresult">-</view>
       </view>
     </view>
-    <view class="keyresult-list">
+    <!-- <view class="keyresult-list">
       <text class="objective-dosc">Keyresult成果2：</text>
       <view class="keyresult-item">
-        <view class="objective-title">感知上快一点</view>
+        <input class="objective-title" placeholder="感知上快一点" />
         <view class="objective-edit">-</view>
       </view>
-    </view>
+    </view> -->
+  </view>
+
+  <view class="newAdd" bindtap="updateOkr">
+    <button class="buttonAdd">保存</button>
   </view>
 </view>

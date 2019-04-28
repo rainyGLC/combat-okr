@@ -24,6 +24,13 @@ class Base {
       })
     })
   }
+  selectIn(params) {
+    return knex(this.table).whereIn(params.key,params.value).select()
+  }
+
+  where(params){
+    return knex(this.table).where(params)
+  }
 
   insert(params){
     return new Promise((reslove,reject)=>{

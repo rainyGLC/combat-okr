@@ -1,13 +1,16 @@
 <view class="okr-container">
-  <buttom class="addOkr">添加okr</buttom>
+  <navigator class="addOkr" url="/pages/okr_create/okr_create">添加okr</navigator>
+
+  <!-- <buttom  wx:navigateTo="url:'/pages/okr_create">添加okr</buttom> -->
   <view class="okrList">
-    <view class="okrItem">
-      <view class="okrItem-title">我想让网页打开速度快一点</view>
-      <view class="create-time">创建时间:2019/03/31 20:31:25</view>
+    <view class="okrItem" wx:for="{{objectives}}" wx:key="{{item.id}}" 
+      data-id="{{item.id}}" data-index="{{index}}" bindtap="showObjectiveArry">
+      <view class="okrItem-title">{{item.title}}</view>
+      <view class="create-time">创建时间:{{item.create_time}}</view>
     </view>
   </view>
 
-  <view class="shade-contanter">
+  <!-- <view class="shade-contanter">
     <view class="shade-popup">
       <view class="shade-box">
         <view class="shade-list">
@@ -19,5 +22,5 @@
         </view>
       </view>
     </view>
-  </view>
+  </view> -->
 </view>

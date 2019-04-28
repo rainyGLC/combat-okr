@@ -1,34 +1,31 @@
 <view class='okrDetail-container'>
   <view class="okrshow">
 
-    <view class="objective-list">
-      <view class="objective-tilte">我想让网页打开速度快一点</view>
-      <view class="create-time">创建时间</view>
+    <view class="objective-list {{objective.status==1 ? 'active' :''}}" 
+      data-status="{{objective.status}}" data-id="{{objective.id}}" 
+      bindtap="objectiveChange">
+      <view class="objective-tilte">{{objective.title}}</view>
+      <view class="create-time">创建时间:{{objective.create_time}}</view>
+      <view class="finished-time" wx:if="{{objective.finished_time}}">完成时间:{{objective.finished_time}}</view>
     </view>
 
     <view class="keyresult-list">
-      <view class="keyresult-item">
-        <view class="keyresult-content">
-          <view class="keyresult-title">感知上也很快</view>
-          <view class="keyresult-completed">已完成</view>
-        </view>
-          <view class="todo-list">
-            <view class="todo-item">添加Loading</view>
-          </view>
-      </view>
 
-      <view class="keyresult-item">
+      <view class="keyresult-item" wx:for="{{keyresults}}" wx:key="{{item.id}}" data-id="{{item.id}}">
         <view class="keyresult-content">
-          <view class="keyresult-title">感知上也很快</view>
-          <view class="keyresult-completed">点击标记</view>
+          <view class="keyresult-title {{item.status==1 ? 'active' : ''}}" 
+            data-id ="{{item.id}}" data-index="{{index}}" data-status="{{item.status}}" bindtap="keyresultChange">{{item.title}}</view>
+          <view class="keyresult-completed">{{item.status ? '已完成' : '点击标记'}}
+          </view>
         </view>
-        <view class="todo-list">
-          <view class="todo-item">图片资源压缩和代理</view>
-          <view class="todo-item">替换提及较大的资源库</view>
-          <view class="todo-item">javascreipt代码压缩</view>
-        </view>
-      </view>
+
+          <view class="todo-list" wx:for="{{item.todos}}" wx:key="{{data.id}}" 
+            data-id="{{data.id}}" wx:for-item="data">
+            <view class="todo-item  {{data.status==1 ? 'active' : ''}}">{{data.title}}</view>
+          </view>    
       </view>
     </view>
+
+  </view>
 
 </view>

@@ -15,7 +15,7 @@ const todoController = {
     let create_time = new Date();
     // console.log(create_time)
     if(!title || !user_id){
-      ctx.state.data.message = "缺少必要参数"
+      ctx.state.data={message:"缺少必要参数"} 
       return
     }
     const todos =await Todo.insert({title,status,user_id,create_time});
@@ -31,7 +31,7 @@ const todoController = {
     let user_id = ctx.state.user_id;
     // console.log(user_id,'ooo');//0能返回user_id
     if(!user_id){
-      ctx.state.data.message='缺少必要参数'
+      ctx.state.data={message:"缺少必要参数"}
     }
     const todos=await Todo.select({status,user_id});
     // let todosArry={};

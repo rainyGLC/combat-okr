@@ -16,6 +16,9 @@
   color:#333;
   margin-bottom:5px;
 }
+.objective-list{
+  margin-top:10px;
+}
 .keyresult-list{
   margin-top:10px;
 }
