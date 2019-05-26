@@ -13,6 +13,7 @@ OKR(Objectives and Key Results)全称为“目标和关键成果”，是企业�
 
 
 ### 项目展示
+![图片](https://raw.githubusercontent.com/rainyGLC/combat-okr/master/images/15.png)
 
 
 ### 项目解读
