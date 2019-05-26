@@ -11,7 +11,7 @@ module.exports = {
   },
   showokrId(id) {
     return request ({
-      url:api.okrId(id),
+      url:api.okrId,
       method:'get'
     })
   },
